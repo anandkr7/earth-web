@@ -4,6 +4,7 @@ import { HttpModule} from '@angular/http';
 
 import { AppComponent } from './app.component';
 import {DataService} from './services/data.service';
+import { UiModule } from './ui/ui.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import {DataService} from './services/data.service';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    UiModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
